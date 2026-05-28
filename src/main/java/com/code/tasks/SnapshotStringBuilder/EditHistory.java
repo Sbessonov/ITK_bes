@@ -14,4 +14,8 @@ class EditHistory {
     public BuilderMemento getLastState() {
         return history.pop();
     }
+
+    public boolean isEmpty(){
+        return history.isEmpty();
+    }
 }
