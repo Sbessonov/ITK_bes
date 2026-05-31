@@ -1,4 +1,4 @@
-package com.code.tasks.threads;
+package com.code.tasks.threads.queue;
 
 
 public class Consumer implements Runnable {

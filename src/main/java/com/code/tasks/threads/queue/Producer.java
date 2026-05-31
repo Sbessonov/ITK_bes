@@ -1,4 +1,4 @@
-package com.code.tasks.threads;
+package com.code.tasks.threads.queue;
 
 public class Producer implements Runnable {
     private final BlockingQueue<String> queue;

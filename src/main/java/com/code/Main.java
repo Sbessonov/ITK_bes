@@ -1,8 +1,8 @@
 package com.code;
 
-import com.code.tasks.threads.BlockingQueue;
-import com.code.tasks.threads.Consumer;
-import com.code.tasks.threads.Producer;
+import com.code.tasks.threads.queue.BlockingQueue;
+import com.code.tasks.threads.queue.Consumer;
+import com.code.tasks.threads.queue.Producer;
 
 
 public class Main {
