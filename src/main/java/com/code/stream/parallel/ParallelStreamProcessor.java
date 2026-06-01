@@ -14,9 +14,9 @@ public class ParallelStreamProcessor {
     public static Map<String, BigDecimal> getAverageGrades(List<Student> students) {
 
         return students.parallelStream()
-                .flatMap(student -> student.grades().entrySet().stream())
+                .flatMap(student -> student.grades().entrySet().parallelStream())
                 .collect(groupingBy(Map.Entry::getKey, averagingInt(Map.Entry::getValue)))
-                .entrySet().stream()
+                .entrySet().parallelStream()
                 .collect(
                         toMap(
                                 Map.Entry::getKey,
